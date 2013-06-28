@@ -1,4 +1,4 @@
-wphelpers
+WordPress snippets
 =========
 
 WordPress Helpers
