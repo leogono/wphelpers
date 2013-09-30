@@ -37,7 +37,7 @@ if ($tags) {
         <?php $found_none = '';
       endwhile;
     }
-    break;
+    break; //foreach only the first taxonomy to avoid duplication
   }
 }
 if ($found_none) {
