@@ -18,3 +18,18 @@ if(get_field('repeater_field_name')): ?>
 	</ul>
  
 <?php endif; ?>
+
+
+<?php
+
+/**
+ * How to get values from a user
+ *
+ * @link http://www.advancedcustomfields.com/resources/how-to/how-to-get-values-from-a-user/
+ */
+ 
+$author_id = get_the_author_meta( 'ID' );
+$author_title = get_field('author_badge', 'user_'. $author_id ); // image field, return type = "Image Object"
+ 
+?>
+<img src="<?php echo $author_badge['url']; ?>" alt="<?php echo $author_badge['alt']; ?>" />
